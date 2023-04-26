@@ -1,0 +1,99 @@
+{
+    "flex-layout.row#wrapper__menuRow": {
+        "props": {
+            "blockClass": "links-menu",
+            "horizontalAlign": "around",
+            "fullWidth": true,
+            "marginLeft":2,
+            "marginRight":2
+        },"children": [
+            "flex-layout.col#wrapper__menuColCerveja",
+            "rich-text#nossosProdutos",
+            "rich-text#acougue",
+            "rich-text#baixeapp",
+            "rich-text#nossasLojas"
+        ]
+    },
+
+    "flex-layout.col#wrapper__menuColCerveja": {
+        "props": {
+            "fullWidth": true,
+            "blockClass":"hoverble"
+        },"children": [
+            "rich-text#cervejas"
+        ]
+    },
+
+    
+    "flex-layout.col#wrapper__menuColProdutos": {
+        "props": {
+            "fullWidth": true,
+            "blockClass":"hoverble"
+        },"children": [
+            "rich-text#nossosProdutos"
+        ]
+    },
+    "flex-layout.col#wrapper__menuColAcougue": {
+        "props": {
+            "fullWidth": true,
+            "blockClass":"hoverble"
+        },"children": [
+            "rich-text#acougue"
+        ]
+    },
+    "flex-layout.col#wrapper__menuColApp": {
+        "props": {
+            "fullWidth": true,
+            "blockClass":"hoverble"
+        },"children": [
+            "rich-text#baixeapp"
+        ]
+    },
+    "flex-layout.col#wrapper__menuColLojas": {
+        "props": {
+            "fullWidth": true,
+            "blockClass":"hoverble"
+        },"children": [
+            "rich-text#nossasLojas"
+        ]
+    },
+
+    "rich-text#cervejas":{
+        "props":{
+            "blockClass": "wrapper__menuItem",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text":"Cervejas"
+        }
+    },"rich-text#nossosProdutos":{
+        "props":{
+            "blockClass": ["wrapper__menuItem","hoverble"],
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text":"Nossos Produtos"
+        }
+    },"rich-text#acougue":{
+        "props":{
+            "blockClass": ["wrapper__menuItem","hoverble"],
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text":"Açougue"
+        }
+    },"rich-text#baixeapp":{
+        "props":{
+            "blockClass": ["wrapper__menuItem","hoverble"],
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text":"Baixe o App"
+        }
+    },"rich-text#nossasLojas":{
+        "props":{
+            "blockClass": ["wrapper__menuItem","hoverble"],
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text":"Nossas Lojas"
+        }
+    }
+
+    
+}

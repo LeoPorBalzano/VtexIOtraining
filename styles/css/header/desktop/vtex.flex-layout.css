@@ -1,0 +1,28 @@
+.flexRow--wrapper__top-bar{
+    display: flex;
+    background-color: #32593B ;
+    height: 70px;
+}
+.flexCol--wrapper__col{
+    flex-direction: row;
+}
+.flexCol--wrapper__col-center{
+    display: flex;
+    flex-grow: 4;
+}
+.flexrow--wrapper__cartButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.flexColChild--wrapper__col-right:hover{
+    background-color: green;
+} 
+
+.searchBarInnerContainer--input__top-bar-search .flex-row{
+    border:none;
+    background-color: red;
+}
+
+/* .flexRowContent--links-menu .stretchChildrenWidth{
+    width: 20%;
+ } */

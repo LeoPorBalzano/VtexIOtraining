@@ -5,9 +5,12 @@
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
+
+
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#1-desktop",
+      "flex-layout.row#top-bar",
+      "flex-layout.row#wrapper__menuRow",
       "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
     ]

@@ -1,0 +1,18 @@
+
+
+
+.autoCompleteOuterContainer--input__top-bar-search{
+    width: 40rem;
+    background-color: blue;
+}
+
+
+
+.searchBarInnerContainer--input__top-bar-search .items-stretch{
+    border:none;
+    background-color: red;
+}
+
+
+
+/*vtex-input-prefix__group flex flex-row items-stretch overflow-hidden br2 bw1 b--solid b--muted-4 hover-b--muted-3 h-large*/
