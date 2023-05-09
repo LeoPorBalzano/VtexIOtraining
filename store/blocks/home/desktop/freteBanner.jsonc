@@ -1,0 +1,16 @@
+{
+    "flex-layout.row#frete":{
+        "props":{
+            "blockClass":"frete"
+        },
+        "children":[
+            "rich-text#frete-gratis"
+        ]
+    },
+    "rich-text#frete-gratis":{
+        "props":{
+            "blockClass":"frete-text",
+            "text": "![cart](assets/imgs/home/banner-st-marche-app.png)"
+        }
+    }
+}

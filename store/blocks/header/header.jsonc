@@ -10,9 +10,7 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#top-bar",
-      "flex-layout.row#wrapper__menuRow",
-      "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
+      "flex-layout.row#wrapper__menuRow"
     ]
   },
 

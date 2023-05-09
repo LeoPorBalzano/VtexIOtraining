@@ -1,4 +1,28 @@
 {
+  "search-result-layout.customQuery#home":{
+    "props":{
+      "blockClass":"HomeSearchResult"
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop#home": {
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+  
+
+//-----------------------
+
   "store.search": {
     "blocks": ["search-result-layout"],
     "props": {

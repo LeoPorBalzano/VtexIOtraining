@@ -1,0 +1,26 @@
+{
+    "flex-layout.col#home-disclosure": {
+        "props": {
+          "blockClass": "nav-menu",
+          "width": "25%",
+          "preventVerticalStretch": true,
+          "preventHorizontalStretch": true
+        },
+        "children": [
+          "flex-layout.col#home-disclosure-column"
+        ]
+      },
+    
+      "flex-layout.col#home-disclosure-column": {
+        "props": {
+          "preventVerticalStretch": true
+        },
+        "children": [
+          "disclosure-layout#especial-disclosure",
+          "disclosure-layout#categories-disclosure"
+        ]
+      }
+
+
+      
+}

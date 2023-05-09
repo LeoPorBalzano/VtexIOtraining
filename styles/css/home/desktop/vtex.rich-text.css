@@ -1,0 +1,25 @@
+.paragraph--disclosure-answer{
+    color: red;
+    font-weight: bold;
+    text-decoration-line: none;
+}.paragraph--trigger-text{
+    color: #5E696D;
+    font-weight: bold;
+}.wrapper--disclosure-answer{
+    height: 1.2rem;
+}.paragraph--content-answer{
+    color: #5E696D;
+    font-weight: bold;
+}.wrapper--content-answer{
+    height: 1rem;
+}
+
+
+.wrapper--frete-text{
+    width: 100%;
+}.image--frete-text{
+    width: 100%;
+    border-radius: 4px;
+}.container--selecao-recomendada{
+    background-color: #32593B;
+}

@@ -4,6 +4,7 @@
             "blockClass": "wrapper__top-bar",
             "colSizing": "auto",
             "horizontalAlign": "around",
+            "sticky":true,
             "fullWidth": true
             
         },
@@ -30,6 +31,7 @@
             "search-bar#top-bar-search"
         ],
         "props": {
+            "width": "grow",
             "blockClass": ["wrapper__col", "wrapper__col-center"],
             "horizontalAlign": "center",
             "verticalAlign":"center"
@@ -38,7 +40,7 @@
       "flex-layout.col#right": {
         "children": [
             "rich-text#top-bar-LogIn",
-            "minicart.v2"
+            "minicart.v2#myMinicart"
         ],
         "props": {
             "blockClass": ["wrapper__col", "wrapper__col-right"],
@@ -55,6 +57,37 @@
         }
     },
 
+
+    "minicart.v2#myMinicart": {
+        "props": {
+          "MinicartIcon": "flex-layout.row#cartButton",
+          "blockClass":"wrapper__minicart"
+        },
+        "children": ["minicart-base-content"]
+      },
+
+      "flex-layout.row#cartButton":{
+        "props":{
+            "colSizing":"auto",
+            "blockClass": "wrapper__cartButton",
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "rich-text#minicart-icon",
+            "rich-text#top-bar-carrinho"
+        ]
+      },
+
+
+      "rich-text#minicart-icon": {
+        "props": {
+            "blockClass": "cart__top-bar",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text":"![cart](assets/imgs/header/cartIcon.png)"
+        }
+      },
+
     "rich-text#top-bar-logo":{
         "props":{
             "blockClass": "text__top-bar",
@@ -68,36 +101,19 @@
         "props":{
             "textAlignment": "CENTER",
             "textPosition": "RIGHT",
-            "blockClass": ["text__top-bar","hoverble"],
+            "blockClass": ["login__top-bar","text__top-bar","hoverble"],
             "text":"Entrar"
         }
     },
 
-    "flex-layout.row#cartButton":{
-        "props" : {
-            "blockClass": ["hoverble", "wrapper__cartButton"],
-            "colSizing": "auto",
-            "horizontalAlign": "between",
-            "verticalAlign": "center"
-        },
-        "children": [
-            "rich-text#top-bar-cartIcon",
-            "rich-text#top-bar-carrinho"
-        ]
-    },
+    
 
     "rich-text#top-bar-carrinho":{
         "props":{
-            "textPosition": "RIGHT",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
             "blockClass": "text__top-bar",
             "text":" Carrinho"
-        }
-    },
-    "rich-text#top-bar-cartIcon":{
-        "props":{
-            "textPosition": "RIGHT",
-            "blockClass": "text__top-bar",
-            "text":"![cart](assets/imgs/header/cartIcon.png)"
         }
     }
 }

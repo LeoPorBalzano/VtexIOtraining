@@ -1,18 +1,35 @@
 
+/*background-color: #428851*/
+::placeholder{
+    color: white;
+}
 
-
+.searchBarContainer{
+    align-self: center;
+    width: 100%;
+}
 .autoCompleteOuterContainer--input__top-bar-search{
-    width: 40rem;
-    background-color: blue;
+    width: 100%;
 }
 
-
-
-.searchBarInnerContainer--input__top-bar-search .items-stretch{
-    border:none;
-    background-color: red;
+.searchBarContainer :global(.vtex-input-prefix__group){
+    border: none;
 }
 
-
-
-/*vtex-input-prefix__group flex flex-row items-stretch overflow-hidden br2 bw1 b--solid b--muted-4 hover-b--muted-3 h-large*/
+.searchBarContainer :global(.vtex-styleguide-9-x-hideDecorators){
+    background-color: #428851;
+    border-radius: 4px;
+    
+}
+.searchBarContainer :global(.vtex-input__suffix){
+    background-color: #32593B;   
+}
+.searchBarContainer :global(.vtex-store-components-3-x-searchIcon--input__top-bar-search) {
+    color: white;
+}
+.searchBarContainer :global(.vtex-store-components-3-x-searchIcon--input__top-bar-search):hover {
+    color: #839041 ;
+}
+.openIconContainer--wrapper__minicart .icon-button:hover{
+    background-color: #32593B;
+}
