@@ -9,7 +9,7 @@
       "product-summary-name",
       "product-summary-space",
       "flex-layout.row#selling-price-savings",
-      
+      "product-quantity",
       "add-to-cart-button"
     ]
   },

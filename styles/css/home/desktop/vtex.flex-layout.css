@@ -17,3 +17,8 @@
 .flexRowContent--price{
     justify-content: center;
 }
+
+.flexRow--menu-row{
+    max-width: 1200px;
+    margin: 0 auto
+}

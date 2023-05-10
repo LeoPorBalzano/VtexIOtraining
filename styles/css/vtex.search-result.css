@@ -20,10 +20,6 @@
 .galleryItem--list {
   border-bottom: 1px #E7E9EE solid;
 }
-.galleryItem {
-  max-width: 23% !important;
-}
-.galleryItem--grid{
-  border: 1px #bbbb solid;
-  margin: 5px;
-} 
+
+  
+

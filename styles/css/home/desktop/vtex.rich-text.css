@@ -23,3 +23,20 @@
 }.container--selecao-recomendada{
     background-color: #32593B;
 }
+
+
+.paragraph--footer-menu{
+    font-size: 1rem;
+    width: 100%;
+    color: white;
+    white-space: nowrap;
+}.paragraph--footer-menu:hover{
+    text-decoration-line: underline;
+    
+}.paragraph--footer{
+    font-size: .65rem;
+    color: #e6e6e6;
+    margin: 0;
+}.image--footer-mail{
+    width: 20px
+}

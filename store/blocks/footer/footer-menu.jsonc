@@ -1,0 +1,62 @@
+{
+    "rich-text#sobre":{
+        "props":{
+            "text":"Sobre",
+            "blockClass": "footer-menu"
+        }
+    },
+    "rich-text#duvidas":{
+        "props":{
+            "text":"Duvidas",
+            "blockClass": "footer-menu"
+        }
+    },
+    "rich-text#privacidade":{
+        "props":{
+            "text":"Privacidade",
+            "blockClass": "footer-menu"
+        }
+    },
+    "rich-text#termos":{
+        "props":{
+            "text":"Termos",
+            "blockClass": "footer-menu"
+        }
+    },
+    "rich-text#apps":{
+        "props":{
+            "text":"Apps",
+            "blockClass": "footer-menu"
+        }
+    },
+    "rich-text#lojas":{
+        "props":{
+            "text":"Lojas",
+            "blockClass": "footer-menu"
+        }
+    },
+    "rich-text#trabalhe-conosco":{
+        "props":{
+            "text":"Trabalhe Conosco",
+            "blockClass": "footer-menu"
+        }
+    },
+    "rich-text#contato":{
+        "props":{
+            "text":"Contato",
+            "blockClass": "footer-menu"
+        }
+    },
+    "rich-text#campanhas":{
+        "props":{
+            "text":"Campanhas",
+            "blockClass": "footer-menu"
+        }
+    },
+    "rich-text#trocas-devolucoes":{
+        "props":{
+            "text":"Trocas e Devoluções",
+            "blockClass": "footer-menu"
+        }
+    }
+}
