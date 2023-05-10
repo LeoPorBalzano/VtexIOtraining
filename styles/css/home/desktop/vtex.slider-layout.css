@@ -29,8 +29,9 @@
   padding-right: .5rem;
   min-height: 250px;
   border: 1px solid #bbbb;
-  margin: 5px;
+  border-radius: 4px;
+  margin: 10px;
 }
 .paginationDotsContainer--shelf{
   display: none;
-}
+} 

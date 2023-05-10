@@ -28,7 +28,8 @@
     "children": [
       "list-context.image-list#deals",
       "flex-layout.row#frete",
-      "flex-layout.col#recomendedBanner"
+      "flex-layout.col#recomendedBanner",
+      "search-result-layout.customQuery"
     ]
   },
 
@@ -129,6 +130,20 @@
       "blockClass": "shelf"
     }
   },
+
+/*####################Shelf principal###################*/
+
+
+
+
+
+
+
+
+
+
+
+
 
   "info-card#home": {
     "props": {

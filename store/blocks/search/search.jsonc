@@ -1,22 +1,36 @@
 {
-  "search-result-layout.customQuery#home":{
-    "props":{
-      "blockClass":"HomeSearchResult"
-    },
+  "search-result-layout.customQuery": {
     "blocks": [
-      "search-result-layout.desktop",
-      "search-result-layout.mobile",
+      "search-result-layout.desktop#custom-search",
+      "search-result-layout.mobile#custom-search",
       "search-not-found-layout"
-    ]
-  },
-  "search-result-layout.desktop#home": {
-    "children": [
-      "flex-layout.row#searchbread",
-      "flex-layout.row#searchtitle",
-      "flex-layout.row#result"
     ],
     "props": {
-      "preventRouteChange": true
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 16,
+        "skusFilter": "ALL",
+        "__unstableProductOriginVtex": true
+      }
+    }
+  },
+  "search-result-layout.mobile#custom-search": {
+    "children": [
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid"
     }
   },
   
@@ -28,7 +42,10 @@
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 16,
+        "__unstableProductOriginVtex": true,
+        "orderByField": "OrderByReleaseDateDESC"
       }
     }
   },
@@ -174,9 +191,6 @@
   "flex-layout.row#products": {
     "children": ["search-content"]
   },
-  "search-content": {
-    "blocks": ["gallery", "not-found"]
-  },
 
   "search-result-layout.mobile": {
     "children": [
@@ -259,29 +273,6 @@
     }
   },
 
-  "gallery": {
-    "props": {
-      "layouts": [
-        {
-          "name": "grid",
-          "component": "GridSummary",
-          "itemsPerRow": {
-            "(min-width:1300px)": 4,
-            "desktop": 3,
-            "tablet": 3,
-            "phone": 2
-          }
-        },
-        {
-          "name": "list",
-          "component": "ListSummary",
-          "itemsPerRow": 1
-        }
-      ],
-      "ListSummary": "product-summary.shelf#listLayout",
-      "GridSummary": "product-summary.shelf"
-    }
-  },
   "gallery-layout-switcher": {
     "children": [
       /*
@@ -334,4 +325,9 @@
       "blockClass": "layout-option"
     }
   }
+
+
+  /*#######Custom search result#######*/
+
+  
 }
