@@ -58,14 +58,13 @@
     "flex-layout.col#especial-column": {
         "props": {
             "blockClass": "especial-column",
-            "preventHorizontalStretch": true
+            "preventVerticalStretch": true,
+            "rowGap":0
         },
         "children": [
             "link.product#selecao-bebidas-c",
-            "link.product#selecao-bebidas-c",
             "link.product#selecao-iogurtes-c",
-            "link.product#selecao-iogurtes-c",
-            "rich-text#vinhos-dia-maes",
+            "link.product#vinhos-dia-maes-c",
             "link.product#vinhos-mes-maio-c"
         ]
     },
@@ -77,8 +76,7 @@
     "link.product#selecao-bebidas-c": {
         "props": {
             "blockClass": "nav-link-especial",
-            "href": "https://www.marche.com.br/window_displays/selecao-bebidas-frescas",
-            "target": "_blank"
+            "href": "https://www.marche.com.br/window_displays/selecao-bebidas-frescas"
         },
         "children": [
             "rich-text#selecao-bebidas"
@@ -163,8 +161,8 @@
     "rich-text#vinhos-dia-maes": {
         "props": {
             "blockClass": [
-                "vinhos-dia-maes",
-                "disclosure-answer"    
+                "vinhos-mes-maio",
+                "disclosure-answer"   
             ],
             "text": "Vinhos Dia das Mães"
         }
@@ -180,7 +178,7 @@
             "target": "_blank"
         },
         "children": [
-            "rich-text#vinhos-dia-maes"
+            "rich-text#vinhos-mes-maio"
         ]
     },
     "rich-text#vinhos-mes-maio": {

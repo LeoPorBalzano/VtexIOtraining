@@ -2,8 +2,7 @@
     "disclosure-layout#categories-disclosure": {
         "props": {
             "animated":true,
-            "initialVisibility": "visible",
-            "preventHorizontalStretch": true
+            "initialVisibility": "visible"
         },
         "children": [
             "disclosure-trigger#categories-trigger",
@@ -49,8 +48,9 @@
     },
     "flex-layout.col#categories-column": {
         "props": {
-            
-            "blockClass": "categories-column"
+            "rowGap":0, 
+            "preventVerticalStretch":true,
+            "blockClass": "categories-container"
         },
         "children": [
             "disclosure-layout#acougue-disclosure",
@@ -82,7 +82,9 @@
     },
     /* AÇOUGUE */
     "disclosure-layout#acougue-disclosure": {
-        "props":{"animated":true},
+        "props":{
+            "animated":true
+        },
         "children": [
             "disclosure-trigger#acougue-trigger",
             "disclosure-content#acougue-content"
@@ -90,11 +92,8 @@
     },
     "disclosure-trigger#acougue-trigger": {
         "props": {
-            "blockClass": [
-                "acougue-trigger",
-                "disclosure-trigger",
-                "disclosure-trigger-intern"
-            ]
+            "blockClass":"disclosure-trigger"
+            
         },
         "children": [
             "rich-text#acougue-text"
@@ -102,10 +101,7 @@
     },
     "rich-text#acougue-text": {
         "props": {
-            "blockClass": [
-                "acougue-text",
-                "content-answer"
-            ],
+            "blockClass": "content-answer",
             "text": "Açougue"
         }
     },
@@ -119,10 +115,9 @@
     },
     "flex-layout.col#acougue-column": {
         "props": {
-            "blockClass": [
-                "acougue-column",
-                "categorias-column"
-            ]
+            "blockClass": "categorias-column",
+            "preventVerticalStretch":true,
+            "rowGap":0
         },
         "children": [
             "link.product#aves-link",

@@ -3,14 +3,17 @@
     border: 1px solid #bbbb;
     padding: 0 20px 20px 20px;
     margin: 20px; 
-    height: 100%;
 
 }
-.flexColChild .flexColChild--categories-column{
-    max-height: fit-content;
+
+.flexColChild--categories-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 .flexRow--home{
-    max-width: 1300px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 

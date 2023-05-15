@@ -2,19 +2,30 @@
     color: red;
     font-weight: bold;
     text-decoration-line: none;
+    margin: 1px
 }.paragraph--trigger-text{
     color: #5E696D;
     font-weight: bold;
 }.wrapper--disclosure-answer{
-    height: 1.2rem;
+    height: min-content;
+}.paragraph--categorias-text{
+    margin:1px
+}.wrapper--categorias-text{
+    height: min-content;
+}
+.container--content-answer{
+    height:  min-content;
+}.wrapper--content-answer{
+    height:  min-content;
 }.paragraph--content-answer{
+    margin:1px;
+}
+.paragraph--content-answer{
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
     color: #5E696D;
     font-weight: bold;
-}.wrapper--content-answer{
-    height: 1rem;
+    font-size: 1rem;
 }
-
-
 .wrapper--frete-text{
     width: 100%;
 }.image--frete-text{

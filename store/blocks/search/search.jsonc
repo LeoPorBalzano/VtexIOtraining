@@ -9,7 +9,7 @@
       "querySchema": {
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
-        "maxItemsPerPage": 16,
+        "maxItemsPerPage": 17,
         "skusFilter": "ALL",
         "__unstableProductOriginVtex": true
       }
