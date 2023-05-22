@@ -1,0 +1,6 @@
+@media ( max-width: 900px ) {
+    .sliderLayoutContainer--shelf{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}

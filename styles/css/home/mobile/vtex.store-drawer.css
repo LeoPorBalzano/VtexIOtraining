@@ -1,0 +1,15 @@
+.drawerHeader{
+    flex-direction: column;
+}
+
+.closeIconContainer{
+    display: none;
+}
+
+@media ( max-width: 900px ) {
+    .opened {
+        background-color: #333;
+    }.drawerHeader{
+        width: 100%;
+    }
+}

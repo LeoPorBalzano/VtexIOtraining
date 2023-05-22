@@ -1,0 +1,13 @@
+@media ( max-width: 900px ) {
+    .container--footer-menu{
+        height: 25px;
+    }.wrapper--footer-menu{
+        height: 25px;
+    }.paragraph--footer-menu{
+        margin-top: 0;
+    }
+
+    .container--footer-mail{
+        width: 100%;
+    }
+}

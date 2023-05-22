@@ -1,0 +1,21 @@
+@media ( max-width: 900px ) {
+   .flexCol--payment-methods{
+        padding-bottom: 20px;
+    }
+    .flexRowContent--payment-methods{
+        flex-direction: column;
+        align-content: center;
+    }
+    .container--footer-mail{
+        padding-bottom: 10px;
+    }
+}
+.flexCol--payment-methods{
+    flex-direction: row;
+}
+.flexRowContent--payment-methods{
+    align-content: center;
+} 
+.flexRowContent--menu-row{
+    padding-top: 0;
+}

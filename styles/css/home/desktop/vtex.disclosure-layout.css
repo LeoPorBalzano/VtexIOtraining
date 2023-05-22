@@ -13,6 +13,10 @@
   display: flex;
 }
 
+.trigger--disclosure-trigger{
+  width: 100%;
+  justify-content: space-between;
+}
 :global(.vtex-disclosure-layout-1-x-content--disclosure-content--hidden) {
   display: none; 
 }

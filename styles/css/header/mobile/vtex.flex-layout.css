@@ -1,0 +1,10 @@
+.flexRowContent--menu-row-header-mobile{
+flex-direction: column;
+padding-left: 15px;
+}
+
+@media ( max-width: 900px ) {
+    .flexCol--categories-container{
+        padding-left: 15px solid #333;
+    }
+}

@@ -81,7 +81,7 @@
 
       "rich-text#minicart-icon": {
         "props": {
-            "blockClass": "cart__top-bar",
+            "blockClass": "icon-carrinho",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
             "text":"![cart](assets/imgs/header/cartIcon.png)"
@@ -112,7 +112,7 @@
         "props":{
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "blockClass": "text__top-bar",
+            "blockClass": "text-carrinho",
             "text":" Carrinho"
         }
     }

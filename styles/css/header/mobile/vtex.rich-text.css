@@ -1,0 +1,27 @@
+.paragraph--menu-header-top-text{
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}.container--menu-header-top-text{
+    height: 30px;
+    padding-bottom: 30px;
+}.wrapper--menu-header-top-text{
+    height: 30px;
+}
+.paragraph--menu-header-top-text{
+    margin-top: 0;
+}
+
+.flexRowContent--menu-row-header-mobile .paragraph--footer-menu{
+    font-size: 30px;
+}
+
+@media (max-width: 900px) {
+    .paragraph--content-answer{
+        padding-left: 15px;
+    }.paragraph--disclosure-answer{
+        padding-left: 15px;
+    }.paragraph--categorias-text{
+        padding-left: 30px;
+    }
+}

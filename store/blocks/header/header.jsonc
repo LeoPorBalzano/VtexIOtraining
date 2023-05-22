@@ -86,18 +86,22 @@
       "height": "12"
     }
   },
+
+
+
   "header-layout.mobile": {
     "children": ["sticky-layout#1-mobile"]
   },
   "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
+    "children": [
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#wrapper__menuRow"
+    ]
   },
   "flex-layout.row#1-mobile": {
     "children": [
       "drawer",
-      "logo#mobile",
-      "flex-layout.col#spacer",
-      "login",
+      "rich-text#top-bar-logo",
       "minicart.v2"
     ],
     "props": {
@@ -108,8 +112,45 @@
     }
   },
   "drawer": {
-    "children": ["menu#drawer"]
+    "children": ["drawer-header#my-drawer"]
   },
+  "drawer-header#my-drawer": {
+    "children": [
+      "flex-layout.col#menu-header-top",
+      "disclosure-layout#especial-disclosure",
+      "disclosure-layout#categories-disclosure",
+      "flex-layout.row#footer-1-header-mobile"
+    ]
+  },
+
+  "flex-layout.col#menu-header-top":{
+    "props":{
+      "blockClass":"menu-header-top"
+    },
+    "children":[
+      "rich-text#pagina-inicial",
+      "rich-text#login",
+      "rich-text#criar-conta"
+    ]
+  },
+
+  "rich-text#pagina-inicial":{
+    "props":{
+      "blockClass":"menu-header-top-text",
+      "text":"Página Inicial"
+    }
+  },"rich-text#login":{
+    "props":{
+      "blockClass":"menu-header-top-text",
+      "text":"Login"
+    }
+  },"rich-text#criar-conta":{
+    "props":{
+      "blockClass":"menu-header-top-text",
+      "text":"Criar Conta"
+    }
+  },
+
 
   "menu#drawer": {
     "children": [
@@ -118,6 +159,7 @@
       "menu-item#more"
     ],
     "props": {
+      "blockClass":"drawer-mobile",
       "orientation": "vertical"
     }
   },

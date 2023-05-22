@@ -23,18 +23,14 @@
 .flexColChild--wrapper__col-left{
     align-self: center;
 }
-.flexColChild--wrapper__col-right:hover{
-    background-color: #ACB753;
-} 
-.flexRowContent--links-menu .stretchChildrenWidth :hover{
-    background-color: #ACB753;
-}.flexColChild--wrapper__col-center{
+ 
+.flexColChild--wrapper__col-center{
     margin: 0 auto;
     width:100%;
 }
 .flexRow--wrapper__cartButton{
-    height: 40px;
+    height: 20px;
 }.flexRowContent--wrapper__cartButton{
-    height: 40px;
+    height: 20px;
 }
 

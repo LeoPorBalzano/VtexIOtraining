@@ -1,0 +1,6 @@
+.quantitySelectorTitle{
+    display: none;
+}.quantitySelectorStepper{
+    width: min-content;
+    margin:0 auto;
+}

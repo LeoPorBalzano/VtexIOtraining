@@ -4,7 +4,6 @@
 
 .sliderLayoutContainer--carousel {
   background-color: #F0F0F0;
-  min-height: 450px;
 }
 
 .sliderTrackContainer {
@@ -25,10 +24,18 @@
 
 .slide--shelf {
   margin-bottom: 25px;
-  min-height: 250px;
   border-radius: 4px;
   margin: 10px;
 }
 .paginationDotsContainer--shelf{
   display: none;
 } 
+
+.paginationDot{
+  width: 50px !important;
+  max-height: 5px !important;
+  padding:0 !important;
+  border-radius: 0;
+}.paginationDot--carousel--isActive{
+  background-color: white;
+}

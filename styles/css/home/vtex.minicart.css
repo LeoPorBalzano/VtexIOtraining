@@ -1,0 +1,27 @@
+.overlay--wrapper__minicart--visible{
+    margin-top: 70px;
+}.opened--wrapper__minicart{
+    margin-top: 70px;
+    width: 30% ;
+    max-width: 30% !important;
+}
+
+.openIconContainer--wrapper__minicart :global(.vtex-button){
+    background-color: white;
+}
+
+.minicartQuantityBadgeDefault{
+    background-color: #ACB753;
+}
+.minicartQuantityBadge--wrapper__minicart{
+    background-color: #ACB753;
+}
+
+
+/*begone*/
+.closeIconContainer--wrapper__minicart{
+    display: none;
+}.minicartTitle{
+    display: none;
+}
+

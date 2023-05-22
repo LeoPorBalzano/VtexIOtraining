@@ -2,5 +2,5 @@
     text-decoration-line: none;
 }.link--nav-link-especial:hover{
     text-decoration-line: underline;
-    text-decoration-color: red;
+    text-decoration-color: rgba(213,50,48,0.9);
 }

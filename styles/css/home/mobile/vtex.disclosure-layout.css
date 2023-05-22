@@ -1,0 +1,11 @@
+@media ( max-width: 900px ) {
+    .trigger--categories-trigger{
+        display: none;
+    }.trigger--especial-trigger{
+        display: none;
+    }.content--disclosure-content{
+        border-bottom: 1px solid #555;
+    }
+    
+    
+}
