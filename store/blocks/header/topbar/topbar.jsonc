@@ -1,0 +1,119 @@
+{
+    "flex-layout.row#top-bar": {
+        "props" : {
+            "blockClass": "wrapper__top-bar",
+            "colSizing": "auto",
+            "horizontalAlign": "around",
+            "sticky":true,
+            "fullWidth": true
+            
+        },
+        "children": [
+            "flex-layout.col#left",
+            "flex-layout.col#center",
+            "flex-layout.col#right"
+        ]
+    },
+
+    "flex-layout.col#left": {
+        "children": [
+            "rich-text#top-bar-logo"
+        ],
+        "props": {
+            "blockClass": ["wrapper__col", "wrapper__col-left"],
+            "verticalAlign":"center",
+            "horizontalAlign": "left"
+        }
+
+      },
+      "flex-layout.col#center": {
+        "children": [
+            "search-bar#top-bar-search"
+        ],
+        "props": {
+            "width": "grow",
+            "blockClass": ["wrapper__col", "wrapper__col-center"],
+            "horizontalAlign": "center",
+            "verticalAlign":"center"
+        }
+      },
+      "flex-layout.col#right": {
+        "children": [
+            "rich-text#top-bar-LogIn",
+            "minicart.v2#myMinicart"
+        ],
+        "props": {
+            "blockClass": ["wrapper__col", "wrapper__col-right"],
+            "verticalAlign":"center",
+            "horizontalAlign": "right"
+        }
+      },
+
+    "search-bar#top-bar-search" : {
+        "props":{
+            "placeholder" : "Procure",
+            "displayMode" : "search-button",
+            "blockClass": "input__top-bar-search"
+        }
+    },
+
+
+    "minicart.v2#myMinicart": {
+        "props": {
+          "MinicartIcon": "flex-layout.row#cartButton",
+          "blockClass":"wrapper__minicart"
+        },
+        "children": ["minicart-base-content"]
+      },
+
+      "flex-layout.row#cartButton":{
+        "props":{
+            "colSizing":"auto",
+            "blockClass": "wrapper__cartButton",
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "rich-text#minicart-icon",
+            "rich-text#top-bar-carrinho"
+        ]
+      },
+
+
+      "rich-text#minicart-icon": {
+        "props": {
+            "blockClass": "icon-carrinho",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text":"![cart](assets/imgs/header/cartIcon.png)"
+        }
+      },
+
+    "rich-text#top-bar-logo":{
+        "props":{
+            "blockClass": "text__top-bar",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text":"![Logo](assets/imgs/header/Logo.jpeg)"
+        }
+    },
+
+    "rich-text#top-bar-LogIn":{
+        "props":{
+            "textAlignment": "CENTER",
+            "textPosition": "RIGHT",
+            "blockClass": ["login__top-bar","text__top-bar","hoverble"],
+            "text":"Entrar"
+        }
+    },
+
+    
+
+    "rich-text#top-bar-carrinho":{
+        "props":{
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "text-carrinho",
+            "text":" Carrinho"
+        }
+    }
+}

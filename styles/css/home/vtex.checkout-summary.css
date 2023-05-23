@@ -1,0 +1,43 @@
+.summaryItemLabel {
+    display: none;
+}.summarySmallDisclaimer {
+    display: none;
+}
+
+
+.summaryItemContainer:nth-child(even){
+    display: none;
+}.summaryItemContainer:first-child{
+    display: none;
+}
+
+.price{
+    font-family: "Source Sans Pro";
+    color:white;
+    font-size: 1.25rem;
+
+    background-color: #428851 ;
+    border-radius: 4px;
+    width: fit-content;
+    padding-right: 5px;
+    padding-left: 5px;
+    float: right;
+    
+}
+.summaryItemPrice{
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*.summaryItemPrice{
+    display: none;
+}*/

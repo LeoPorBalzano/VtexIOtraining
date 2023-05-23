@@ -1,37 +1,43 @@
 {
   "store.home": {
+    "props": {
+      "blockClass": "store-home"
+    },
     "blocks": [
-      "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#deals",
-      "__fold__",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#home"
+      
+    ]
+  }
+  ,"flex-layout.row#home":{
+    "props": {
+        "blockClass": "home"
+      },
+      "children": [
+        "flex-layout.col#home-disclosure",
+        "flex-layout.col#home-content"
+      ]
+  },
+
+
+
+  "flex-layout.col#home-content": {
+    "props": {
+      "blockClass": "home-content",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "list-context.image-list#deals",
+      "flex-layout.row#frete",
+      "flex-layout.col#recomendedBanner",
+      "search-result-layout.customQuery"
     ]
   },
 
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
-    "props": {
-      "height": 570,
-      "preload": true,
-      "images": [
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
-        },
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
-        }
-      ]
-    }
-  },
+
+
+/*###############MERCHANT HOME##################*/
+
+  
   "slider-layout#demo-images": {
     "props": {
       "itemsPerPage": {
@@ -51,9 +57,58 @@
       "blockClass": "shelfTitle"
     }
   },
+  "list-context.image-list#deals": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "https://mfresh.s3.amazonaws.com/uploads/attachment/237183/file/5e2c40b3-e7b7-4d65-88b1-3ec82dc5e13d.png",
+          "description": "something something"
+        },
+        {
+          "image": "https://mfresh.s3.amazonaws.com/uploads/attachment/237184/file/c2475d42-a97c-4ee8-9ca0-7a28099998b7.png",
+          "description": "something something"
+        },
+        {
+            "image": "https://mfresh.s3.amazonaws.com/uploads/attachment/237185/file/c206506b-5115-4de5-a8d2-3e3da5adc3ed.png",
+            "description": "something something"
+        }
+      ]
+    }
+  },
+
+
+
+  /*######################Carrosel Recomendado#######################*/
+  
+  "flex-layout.col#recomendedBanner":{
+    "props": {
+      "blockClass": "home-content",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#recomendado",
+      "flex-layout.row#shelf"
+    ]
+  },
+
+  "rich-text#recomendado":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Sugestões recomendadas para você",
+      "blockClass": "selecao-recomendada"
+    }
+  },
+
+  
+
   "flex-layout.row#shelf": {
     "children": ["list-context.product-list#demo1"]
   },
+
+
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
@@ -61,18 +116,27 @@
       "orderBy": "OrderByTopSaleDESC"
     }
   },
+
+
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
         "desktop": 4,
         "tablet": 3,
-        "phone": 1
+        "phone": 2
       },
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf"
     }
   },
+
+
+
+
+
+
+
 
   "info-card#home": {
     "props": {
@@ -101,4 +165,6 @@
       "blockClass": "link"
     }
   }
+
+  
 }

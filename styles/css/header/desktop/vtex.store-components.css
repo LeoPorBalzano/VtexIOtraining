@@ -1,0 +1,35 @@
+
+/*background-color: #428851*/
+::placeholder{
+    color: white;
+}
+
+.searchBarContainer{
+    align-self: center;
+    width: 100%;
+}
+.autoCompleteOuterContainer--input__top-bar-search{
+    width: 100%;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group){
+    border: none;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-hideDecorators){
+    background-color: #428851;
+    border-radius: 4px;
+    
+}
+.searchBarContainer :global(.vtex-input__suffix){
+    background-color: #32593B;   
+}
+.searchBarContainer :global(.vtex-store-components-3-x-searchIcon--input__top-bar-search) {
+    color: white;
+}
+.searchBarContainer :global(.vtex-store-components-3-x-searchIcon--input__top-bar-search):hover {
+    color: #839041 ;
+}
+.openIconContainer--wrapper__minicart .icon-button:hover{
+    background-color: #32593B;
+}

@@ -1,0 +1,10 @@
+@media ( max-width: 900px ) {
+    .link--nav-link-especial{
+        text-decoration-line: none;
+    }.link--nav-link-especial:hover{
+        text-decoration-line: underline;
+        text-decoration-color: #fecc4d ;
+    }.link--categorias-link{
+        text-decoration-line: none;
+    }
+}

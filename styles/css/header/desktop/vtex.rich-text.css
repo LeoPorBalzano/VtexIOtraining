@@ -1,0 +1,28 @@
+.paragraph--text__top-bar{
+    font-size: 20px;
+    color:white;
+    
+}
+.image--cart__top-bar{
+    width: 24px;
+}.paragraph--login__top-bar{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    color:white;
+}
+.container--wrapper__menuItem:hover{
+    background-color: #ACB753;
+    color:white
+}.container--wrapper__menuItem:hover .paragraph--wrapper__menuItem{
+    color:white
+}
+.paragraph--text-carrinho{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1rem;
+    color:#32593B;
+}
+.image--icon-carrinho{
+    width: 1rem;
+}

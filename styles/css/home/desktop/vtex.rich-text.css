@@ -1,0 +1,80 @@
+@import url('https://fonts.cdnfonts.com/css/uchiyama');
+@import url('https://fonts.googleapis.com/css?family=Source Sans Pro');
+
+
+.paragraph--disclosure-answer{
+    color: rgba(213,50,48,0.9);
+    font-weight: bold;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}.paragraph--trigger-text{
+    color: #5E696D;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}.wrapper--disclosure-answer{
+    height: min-content;
+}.paragraph--categorias-text{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}.wrapper--categorias-text{
+    height: min-content;
+}
+.container--content-answer{
+    height:  min-content;
+}.wrapper--content-answer{
+    height:  min-content;
+}.paragraph--content-answer{
+    margin:0px;
+}
+.paragraph--content-answer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5E696D;
+    font-weight: bold;
+    font-size: 1.1rem;
+}.paragraph--content-answer:hover{
+    text-decoration: underline;
+}.paragraph--selecao-recomendada{
+    font-family: 'Uchiyama';
+    color:white;
+    margin:0;
+}
+.wrapper--frete-text{
+    width: 100%;
+}.image--frete-text{
+    width: 100%;
+    border-radius: 4px;
+}.container--selecao-recomendada{
+    background-color: #32593B;
+}.paragraph--categorias-text{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.paragraph--wrapper__menuItem{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #32593B;
+    font-size: 1.2rem;
+}
+
+.paragraph--footer-menu{
+    font-size: 1rem;
+    width: 100%;
+    color: white;
+    white-space: nowrap;
+}.paragraph--footer-menu:hover{
+    text-decoration-line: underline;
+    
+}.paragraph--footer{
+    font-size: .65rem;
+    color: #e6e6e6;
+    margin: 0;
+}.image--footer-mail{
+    width: 20px
+}
+
+.paragraph--cartTitle{
+    color:white;
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+}

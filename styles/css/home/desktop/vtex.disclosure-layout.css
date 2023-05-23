@@ -1,0 +1,42 @@
+.trigger{
+  border:none;
+  background: transparent;
+}
+.trigger--especial-trigger{
+  display: flex;
+}
+
+.wrapper--trigger-text{
+  padding-right: 6px;
+}
+.trigger--categories-trigger{
+  display: flex;
+}
+
+.trigger--disclosure-trigger{
+  width: 100%;
+  justify-content: space-between;
+}
+:global(.vtex-disclosure-layout-1-x-content--disclosure-content--hidden) {
+  display: none; 
+}
+
+.content {
+  display: block !important;
+}
+
+.content--hidden {
+  transition: 1s;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.content--visible {
+  transition: 1s;
+  height: auto;
+  transform: scaleY(1);
+  transform-origin: top;
+}

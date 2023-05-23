@@ -1,0 +1,12 @@
+@media ( max-width: 900px ) {
+    .paragraph--disclosure-answer{
+        color: #fecc4d;
+    }
+    .paragraph--content-answer{
+        color: white
+    }
+    .paragraph--categorias-text{
+        color: white;
+        text-decoration-line:none ;
+    }
+}
